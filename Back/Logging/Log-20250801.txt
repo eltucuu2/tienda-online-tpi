@@ -1,0 +1,990 @@
+[01-08-2025]-[11:29:25.057] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[11:29:25.059] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[11:29:25.438] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[11:29:25.439] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[11:29:25.439] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[11:32:18.436] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomi18 con rol: Admin
+[01-08-2025]-[11:32:18.480] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomi18
+[01-08-2025]-[11:33:39.137] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1001
+[01-08-2025]-[11:33:39.609] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+System.ArgumentOutOfRangeException: El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+   at Dsw2025Tpi.Domain.Entities.Product..ctor(String sku, String internalCode, String name, String description, Decimal currentPrice, Int32 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 43
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 36
+   at Dsw2025Tpi.Api.Controllers.ProductsController.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[11:37:09.148] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1001
+[01-08-2025]-[11:37:09.244] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+System.ArgumentOutOfRangeException: El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+   at Dsw2025Tpi.Domain.Entities.Product..ctor(String sku, String internalCode, String name, String description, Decimal currentPrice, Int32 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 43
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 36
+   at Dsw2025Tpi.Api.Controllers.ProductsController.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[11:37:52.664] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1001
+[01-08-2025]-[11:37:52.801] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto creado correctamente: SKU-1001
+[01-08-2025]-[11:40:38.863] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1001
+[01-08-2025]-[11:40:38.872] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Intento de duplicación de producto con SKU existente: SKU-1001
+[01-08-2025]-[11:42:50.161] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[11:42:50.167] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[11:42:50.392] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[11:42:50.393] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[11:42:50.393] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[11:43:51.469] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomi18 con rol: Admin
+[01-08-2025]-[11:43:51.501] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomi18
+[01-08-2025]-[11:44:44.253] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1001
+[01-08-2025]-[11:44:44.713] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Intento de duplicación de producto con SKU existente: SKU-1001
+[01-08-2025]-[11:47:33.982] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[11:47:33.987] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[11:47:34.207] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[11:47:34.210] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[11:47:34.210] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[11:49:18.185] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomi18 con rol: Admin
+[01-08-2025]-[11:49:18.226] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomi18
+[01-08-2025]-[11:50:21.245] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1001
+[01-08-2025]-[11:50:21.485] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Intento de duplicación de producto con SKU existente: SKU-1001
+[01-08-2025]-[11:50:21.654] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto creado correctamente: SKU-1001
+[01-08-2025]-[11:51:41.425] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[11:52:38.312] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[11:52:38.315] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[11:52:38.435] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[11:52:38.436] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[11:52:38.436] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[11:53:02.691] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomi18 con rol: Admin
+[01-08-2025]-[11:53:02.722] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomi18
+[01-08-2025]-[11:54:31.208] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1001
+[01-08-2025]-[11:54:31.473] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Intento de duplicación de producto con SKU existente: SKU-1001
+[01-08-2025]-[11:54:31.774] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Ya existe un producto con el Sku SKU-1001
+Dsw2025Tpi.Application.Exceptions.DuplicatedEntityException: Ya existe un producto con el Sku SKU-1001
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateDuplicatedProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 84
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 34
+   at Dsw2025Tpi.Api.Controllers.ProductsController.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[11:58:12.717] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1003
+[01-08-2025]-[11:58:12.906] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+System.ArgumentOutOfRangeException: El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+   at Dsw2025Tpi.Domain.Entities.Product..ctor(String sku, String internalCode, String name, String description, Decimal currentPrice, Int32 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 43
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 36
+   at Dsw2025Tpi.Api.Controllers.ProductsController.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[11:59:19.248] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1003
+[01-08-2025]-[11:59:19.410] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+System.ArgumentOutOfRangeException: El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+   at Dsw2025Tpi.Domain.Entities.Product..ctor(String sku, String internalCode, String name, String description, Decimal currentPrice, Int32 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 45
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 36
+   at Dsw2025Tpi.Api.Controllers.ProductsController.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[11:59:55.279] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[12:00:26.154] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[12:00:26.168] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[12:00:26.462] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[12:00:26.468] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[12:00:26.468] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[12:00:59.120] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomi18 con rol: Admin
+[01-08-2025]-[12:00:59.162] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomi18
+[01-08-2025]-[12:01:26.051] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[01-08-2025]-[12:01:26.449] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 3 productos
+[01-08-2025]-[12:02:16.640] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "554569ea-2da9-4859-a20f-0674e3096839"
+[01-08-2025]-[12:02:16.831] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto actualizado correctamente. SKU: SKU-1001
+[01-08-2025]-[12:03:33.052] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "554569ea-2da9-4859-a20f-0674e3096839"
+[01-08-2025]-[12:03:33.062] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Datos inválidos del producto: {"Sku":"","InternalCode":"INT-2101","Name":"nombre","Description":"Invalid product update.","CurrentPrice":69.99,"StockQuantity":25,"$type":"Request"}
+[01-08-2025]-[12:03:33.217] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Los datos del producto no son válidos.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Los datos del producto no son válidos.
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateProductRequest(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 32
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 71
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[12:04:02.617] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "554569ea-2da9-4859-a20f-0674e3096839"
+[01-08-2025]-[12:04:02.619] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Datos inválidos del producto: {"Sku":"SKU-1008","InternalCode":"INT-2101","Name":"","Description":"Invalid product update.","CurrentPrice":69.99,"StockQuantity":25,"$type":"Request"}
+[01-08-2025]-[12:04:02.712] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Los datos del producto no son válidos.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Los datos del producto no son válidos.
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateProductRequest(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 32
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 71
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[12:04:41.670] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "554569ea-2da9-4859-a20f-0674e3096839"
+[01-08-2025]-[12:04:41.835] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+System.ArgumentOutOfRangeException: El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+   at Dsw2025Tpi.Domain.Entities.Product.Update(String sku, String internalCode, String name, String description, Decimal currentPrice, Nullable`1 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 60
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 78
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[12:04:50.320] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "554569ea-2da9-4859-a20f-0674e3096839"
+[01-08-2025]-[12:04:50.443] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+System.ArgumentOutOfRangeException: El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+   at Dsw2025Tpi.Domain.Entities.Product.Update(String sku, String internalCode, String name, String description, Decimal currentPrice, Nullable`1 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 66
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 78
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[12:06:20.937] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "78eb8127-9728-4d22-9169-54d13b831241"
+[01-08-2025]-[12:06:21.069] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+System.ArgumentOutOfRangeException: El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+   at Dsw2025Tpi.Domain.Entities.Product.Update(String sku, String internalCode, String name, String description, Decimal currentPrice, Nullable`1 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 66
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 78
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[12:06:47.449] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[12:08:16.222] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[12:08:16.226] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[12:08:16.618] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[12:08:16.619] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[12:08:16.619] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[12:08:36.094] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Usuario o contraseña incorrectos
+Dsw2025Tpi.Application.Exceptions.UnauthorizedException: Usuario o contraseña incorrectos
+   at Dsw2025Tpi.Api.Controllers.AuthenticateController.Login(LoginModel request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\AuthenticateController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[12:08:44.470] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomi18 con rol: Admin
+[01-08-2025]-[12:08:44.500] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomi18
+[01-08-2025]-[12:09:05.623] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[01-08-2025]-[12:09:05.878] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 3 productos
+[01-08-2025]-[12:09:47.672] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "78eb8127-9728-4d22-9169-54d13b831241"
+[01-08-2025]-[12:09:47.701] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Intento de duplicación de producto con SKU existente: SKU-1001
+[01-08-2025]-[12:09:47.819] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Ya existe un producto con el Sku SKU-1001
+Dsw2025Tpi.Application.Exceptions.DuplicatedEntityException: Ya existe un producto con el Sku SKU-1001
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateDuplicatedProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 84
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 77
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[12:10:26.910] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[12:15:02.584] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[12:15:02.588] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[12:15:02.808] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[12:15:02.809] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[12:15:02.809] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[12:15:50.428] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomas con rol: Customer
+[01-08-2025]-[12:15:50.463] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomas
+[01-08-2025]-[12:17:58.725] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[12:19:09.981] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[12:19:09.986] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[12:19:10.156] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[12:19:10.158] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[12:19:10.158] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[12:19:29.502] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomi18 con rol: Admin
+[01-08-2025]-[12:19:29.534] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomi18
+[01-08-2025]-[12:20:56.160] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1004
+[01-08-2025]-[12:20:56.576] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto creado correctamente: SKU-1004
+[01-08-2025]-[12:21:48.262] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-2041
+[01-08-2025]-[12:21:48.293] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto creado correctamente: SKU-2041
+[01-08-2025]-[12:22:09.730] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomas con rol: Customer
+[01-08-2025]-[12:22:09.731] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomas
+[01-08-2025]-[12:23:26.846] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[01-08-2025]-[12:23:26.862] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 5 productos
+[01-08-2025]-[12:28:30.638] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+[01-08-2025]-[12:28:30.887] [ERR] Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (12ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 200), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 500), @p5='?' (Size = 200), @p6='?' (DbType = Int32), @p7='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p13='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Guid), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Int32), @p18='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p19='?' (Precision = 15) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Order] ([Id], [BillingAddress], [CustomerId], [Date], [Notes], [ShippingAddress], [Status], [TotalAmount])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+INSERT INTO [OrderItem] ([Id], [OrderId], [ProductId], [Quantity], [Subtotal], [UnitPrice])
+VALUES (@p8, @p9, @p10, @p11, @p12, @p13),
+(@p14, @p15, @p16, @p17, @p18, @p19);
+[01-08-2025]-[12:28:30.932] [ERR] Microsoft.EntityFrameworkCore.Update An exception occurred in the database while saving changes for context type 'Dsw2025Tpi.Data.Dsw2025TpiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:901ce915-1009-4572-b3c4-d4f64158b5a3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:901ce915-1009-4572-b3c4-d4f64158b5a3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Data.Repositories.EfRepository.Add[T](T entity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Data\Repositories\EfRepository.cs:line 23
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 64
+[01-08-2025]-[12:28:31.269] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:901ce915-1009-4572-b3c4-d4f64158b5a3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Data.Repositories.EfRepository.Add[T](T entity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Data\Repositories\EfRepository.cs:line 23
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 64
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[12:30:11.826] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+[01-08-2025]-[12:30:11.847] [ERR] Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 200), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 500), @p5='?' (Size = 200), @p6='?' (DbType = Int32), @p7='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p13='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Guid), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Int32), @p18='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p19='?' (Precision = 15) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Order] ([Id], [BillingAddress], [CustomerId], [Date], [Notes], [ShippingAddress], [Status], [TotalAmount])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+INSERT INTO [OrderItem] ([Id], [OrderId], [ProductId], [Quantity], [Subtotal], [UnitPrice])
+VALUES (@p8, @p9, @p10, @p11, @p12, @p13),
+(@p14, @p15, @p16, @p17, @p18, @p19);
+[01-08-2025]-[12:30:11.851] [ERR] Microsoft.EntityFrameworkCore.Update An exception occurred in the database while saving changes for context type 'Dsw2025Tpi.Data.Dsw2025TpiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:901ce915-1009-4572-b3c4-d4f64158b5a3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:901ce915-1009-4572-b3c4-d4f64158b5a3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Data.Repositories.EfRepository.Add[T](T entity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Data\Repositories\EfRepository.cs:line 23
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 64
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task, ConfigureAwaitOptions options)
+[01-08-2025]-[12:30:12.065] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:901ce915-1009-4572-b3c4-d4f64158b5a3
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Data.Repositories.EfRepository.Add[T](T entity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Data\Repositories\EfRepository.cs:line 23
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 64
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[12:30:51.446] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "15f459ed-0f1b-42fd-abb8-4054ef919bb7"
+[01-08-2025]-[12:30:51.470] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Orden creada exitosamente con ID: "c8af6a77-ce3e-4ea7-bfb2-357dcf82f2bb"
+[01-08-2025]-[12:36:46.788] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "ed80d44a-738b-48f1-93b9-2ef01d16c363"
+[01-08-2025]-[12:36:46.822] [ERR] Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 200), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 500), @p5='?' (Size = 200), @p6='?' (DbType = Int32), @p7='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p13='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Guid), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Int32), @p18='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p19='?' (Precision = 15) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Order] ([Id], [BillingAddress], [CustomerId], [Date], [Notes], [ShippingAddress], [Status], [TotalAmount])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+INSERT INTO [OrderItem] ([Id], [OrderId], [ProductId], [Quantity], [Subtotal], [UnitPrice])
+VALUES (@p8, @p9, @p10, @p11, @p12, @p13),
+(@p14, @p15, @p16, @p17, @p18, @p19);
+[01-08-2025]-[12:36:46.826] [ERR] Microsoft.EntityFrameworkCore.Update An exception occurred in the database while saving changes for context type 'Dsw2025Tpi.Data.Dsw2025TpiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7060904e-faea-420c-b731-0937dd268baf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7060904e-faea-420c-b731-0937dd268baf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Data.Repositories.EfRepository.Add[T](T entity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Data\Repositories\EfRepository.cs:line 23
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 64
+[01-08-2025]-[12:36:47.048] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7060904e-faea-420c-b731-0937dd268baf
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Data.Repositories.EfRepository.Add[T](T entity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Data\Repositories\EfRepository.cs:line 23
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 64
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[13:21:20.492] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[13:21:20.496] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[13:21:20.673] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[13:21:20.674] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[13:21:20.675] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[13:22:03.664] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomas con rol: Customer
+[01-08-2025]-[13:22:03.694] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomas
+[01-08-2025]-[13:23:55.811] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[01-08-2025]-[13:23:56.047] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 5 productos
+[01-08-2025]-[13:26:19.953] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "15f459ed-0f1b-42fd-abb8-4054ef919bb7"
+[01-08-2025]-[13:26:19.962] [WRN] Dsw2025Tpi.Application.Helpers.OrdersManagementServiceExtensions Datos incompletos o inválidos para la orden: {"CustomerId":"15f459ed-0f1b-42fd-abb8-4054ef919bb7","ShippingAddress":"123 Main St, Springfield","BillingAddress":"123 Main St, Springfield","OrderItems":[],"$type":"Request"}
+[01-08-2025]-[13:26:20.195] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Datos de la orden inválidos o incompletos.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Datos de la orden inválidos o incompletos.
+   at Dsw2025Tpi.Application.Helpers.OrdersManagementServiceExtensions.ValidateOrderRequest(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\OrdersManagementServiceExtensions.cs:line 35
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 37
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[13:28:48.932] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "15f459ed-0f1b-42fd-abb8-4054ef919bb7"
+[01-08-2025]-[13:28:49.273] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware La cantidad debe ser mayor a 0 (Parameter 'quantity')
+System.ArgumentOutOfRangeException: La cantidad debe ser mayor a 0 (Parameter 'quantity')
+   at Dsw2025Tpi.Domain.Entities.OrderItem..ctor(Product product, Guid productId, Int32 quantity, Decimal unitPrice) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\OrderItem.cs:line 45
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.<>c__DisplayClass4_0.<AddOrder>b__1(Request i) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 48
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 45
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[13:29:04.868] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "b1a7c2e3-4d5f-6789-abcd-1234567890ef"
+[01-08-2025]-[13:29:05.265] [ERR] Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (12ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 200), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 500), @p5='?' (Size = 200), @p6='?' (DbType = Int32), @p7='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Int32), @p12='?' (Precision = 15) (Scale = 2) (DbType = Decimal), @p13='?' (Precision = 15) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Order] ([Id], [BillingAddress], [CustomerId], [Date], [Notes], [ShippingAddress], [Status], [TotalAmount])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+INSERT INTO [OrderItem] ([Id], [OrderId], [ProductId], [Quantity], [Subtotal], [UnitPrice])
+VALUES (@p8, @p9, @p10, @p11, @p12, @p13);
+[01-08-2025]-[13:29:05.296] [ERR] Microsoft.EntityFrameworkCore.Update An exception occurred in the database while saving changes for context type 'Dsw2025Tpi.Data.Dsw2025TpiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:201cf1b3-379b-406b-a374-1bf1ee259f49
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:201cf1b3-379b-406b-a374-1bf1ee259f49
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Data.Repositories.EfRepository.Add[T](T entity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Data\Repositories\EfRepository.cs:line 23
+[01-08-2025]-[13:29:05.629] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Order_Customer_CustomerId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Customer", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_OrderItem_Order_OrderId". The conflict occurred in database "Dsw2025TpiDb", table "dbo.Order", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:201cf1b3-379b-406b-a374-1bf1ee259f49
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Data.Repositories.EfRepository.Add[T](T entity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Data\Repositories\EfRepository.cs:line 23
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 65
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[14:25:51.535] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[14:25:51.539] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[14:25:51.697] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[14:25:51.698] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[14:25:51.699] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[14:26:52.348] [ERR] Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 100), @p2='?' (Size = 60), @p3='?' (Size = 15)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Email], [Name], [Phone])
+VALUES (@p0, @p1, @p2, @p3);
+[01-08-2025]-[14:26:52.393] [ERR] Microsoft.EntityFrameworkCore.Update An exception occurred in the database while saving changes for context type 'Dsw2025Tpi.Data.Dsw2025TpiContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Customers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:4d075e92-75c1-4b92-b660-b6970d5d464a
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Customers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:4d075e92-75c1-4b92-b660-b6970d5d464a
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Api.Controllers.AuthenticateController.RegisterCustomer(RegisterModel model) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\AuthenticateController.cs:line 143
+[01-08-2025]-[14:26:52.670] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Customers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:4d075e92-75c1-4b92-b660-b6970d5d464a
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Dsw2025Tpi.Api.Controllers.AuthenticateController.RegisterCustomer(RegisterModel model) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\AuthenticateController.cs:line 143
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[14:31:17.791] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[14:32:04.120] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[14:32:04.123] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[14:32:04.243] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[14:32:04.245] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[14:32:04.246] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[14:32:44.851] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Ya existe un usuario registrado con ese email.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Ya existe un usuario registrado con ese email.
+   at Dsw2025Tpi.Api.Controllers.AuthenticateController.RegisterCustomer(RegisterModel model) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\AuthenticateController.cs:line 109
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[01-08-2025]-[14:33:40.203] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomi con rol: Customer
+[01-08-2025]-[14:33:40.228] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomi
+[01-08-2025]-[14:35:03.969] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[01-08-2025]-[14:35:04.002] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 5 productos
+[01-08-2025]-[14:40:11.051] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[14:51:21.074] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[14:51:21.076] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[14:51:21.180] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[14:51:21.181] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[14:51:21.181] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[14:51:32.114] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[15:14:21.567] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[15:14:21.572] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[15:14:21.774] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[15:14:21.775] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[15:14:21.775] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[15:14:49.402] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[15:54:27.542] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[15:54:27.547] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[15:54:27.775] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[15:54:27.776] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[15:54:27.776] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[15:56:03.791] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[18:09:35.616] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[18:09:35.620] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[18:09:35.913] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[18:09:35.915] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[18:09:35.915] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[18:10:37.558] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Bauti con rol: Admin
+[01-08-2025]-[18:10:37.627] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Bauti
+[01-08-2025]-[18:11:14.105] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[18:20:00.762] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[18:20:00.765] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[18:20:01.102] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[18:20:01.111] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[18:20:01.115] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[18:20:26.591] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[01-08-2025]-[18:20:29.981] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 5 productos
+[01-08-2025]-[18:29:55.094] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[18:29:55.099] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[18:29:55.394] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[18:29:55.395] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[18:29:55.396] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[18:29:58.997] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[01-08-2025]-[18:36:05.983] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[18:36:05.985] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[18:36:06.093] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[18:36:06.094] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[18:36:06.094] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[18:37:38.840] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[01-08-2025]-[18:37:38.844] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[01-08-2025]-[18:37:39.039] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[01-08-2025]-[18:37:39.041] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[01-08-2025]-[18:37:39.041] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[01-08-2025]-[18:37:47.326] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[01-08-2025]-[18:37:49.443] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 5 productos
+[01-08-2025]-[18:37:58.136] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Buscando producto por ID: "554569ea-2da9-4859-a20f-0674e3096839"
+[01-08-2025]-[18:37:58.406] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto encontrado: SKU-1001

@@ -1,0 +1,22 @@
+[
+  {
+    "Id": "78eb8127-9728-4d22-9169-54d13b831241",
+    "Sku": "SKU001",
+    "InternalCode": "INT001",
+    "Name": "Producto A",
+    "Description": "Descripción del Producto A",
+    "CurrentPrice": 100.00,
+    "StockQuantity": 50,
+    "IsActive": true
+  },
+  {
+    "Id": "6d595902-eef3-401a-96b3-85367c8e733e",
+    "Sku": "SKU002",
+    "InternalCode": "INT002",
+    "Name": "Producto B",
+    "Description": "Descripción del Producto B",
+    "CurrentPrice": 200.00,
+    "StockQuantity": 30,
+    "IsActive": true
+  }
+]

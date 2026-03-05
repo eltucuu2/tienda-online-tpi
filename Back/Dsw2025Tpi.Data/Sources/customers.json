@@ -1,0 +1,72 @@
+  [
+  {
+    "username": "juan.perez",
+    "password": "Password123!",
+    "email": "juan.perez@example.com",
+    "phoneNumber": "3814550001",
+    "name": "Juan Perez"
+  },
+  {
+    "username": "maria.garcia",
+    "password": "Maria#2025",
+    "email": "maria.garcia@example.com",
+    "phoneNumber": "3814550002",
+    "name": "Maria Garcia"
+  },
+  {
+    "username": "carlos.lopez",
+    "password": "Carlos$789",
+    "email": "carlos.lopez@example.com",
+    "phoneNumber": "3814550003",
+    "name": "Carlos Lopez"
+  },
+  {
+    "username": "ana.martinez",
+    "password": "Ana!45678",
+    "email": "ana.martinez@example.com",
+    "phoneNumber": "3814550004",
+    "name": "Ana Martinez"
+  },
+  {
+    "username": "pedro.sanchez",
+    "password": "Pedro@321",
+    "email": "pedro.sanchez@example.com",
+    "phoneNumber": "3814550005",
+    "name": "Pedro Sanchez"
+  },
+  {
+    "username": "laura.fernandez",
+    "password": "Laura#654",
+    "email": "laura.fernandez@example.com",
+    "phoneNumber": "3814550006",
+    "name": "Laura Fernandez"
+  },
+  {
+    "username": "miguel.rodriguez",
+    "password": "Miguel$987",
+    "email": "miguel.rodriguez@example.com",
+    "phoneNumber": "3814550007",
+    "name": "Miguel Rodriguez"
+  },
+  {
+    "username": "sofia.gonzalez",
+    "password": "Sofia!159",
+    "email": "sofia.gonzalez@example.com",
+    "phoneNumber": "3814550008",
+    "name": "Sofia Gonzalez"
+  },
+  {
+    "username": "david.diaz",
+    "password": "David@753",
+    "email": "david.diaz@example.com",
+    "phoneNumber": "3814550009",
+    "name": "David Diaz"
+  },
+  {
+    "username": "lucia.romero",
+    "password": "Lucia#951",
+    "email": "lucia.romero@example.com",
+    "phoneNumber": "3814550010",
+    "name": "Lucia Romero"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "Id": "bd7901d0-0aba-425f-af8c-a91e54ea492d",
+    "CustomerId": "15f459ed-0f1b-42fd-abb8-4054ef919bb7",
+    "Date": "2025-07-14T16:00:00",
+    "ShippingAddress": "Calle Falsa 123",
+    "BillingAddress": "Calle Falsa 123",
+    "Notes": "Entrega urgente",
+    "Status": 1,
+    "TotalAmount": 300.00
+  },
+  {
+    "Id": "97431aab-d194-44df-bab2-acd76c3b77ca",
+    "CustomerId": "26ccd3d2-200b-438a-8eee-33e3d6ed559b",
+    "Date": "2025-07-14T17:00:00",
+    "ShippingAddress": "Av. Siempre Viva 742",
+    "BillingAddress": "Av. Siempre Viva 742",
+    "Notes": "",
+    "Status": 2,
+    "TotalAmount": 200.00
+  }
+]

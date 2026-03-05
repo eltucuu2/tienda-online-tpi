@@ -1,0 +1,502 @@
+[31-07-2025]-[14:43:21.748] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[14:43:21.751] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[14:43:22.239] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[14:43:22.243] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[14:43:22.243] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[14:44:23.499] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[14:44:23.503] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[14:44:23.731] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[14:44:23.740] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[14:44:23.740] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[14:44:28.601] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[31-07-2025]-[14:48:58.143] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[14:48:58.149] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[14:48:58.341] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[14:48:58.342] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[14:48:58.342] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[14:49:48.053] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[31-07-2025]-[14:50:15.955] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[14:50:15.959] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[14:50:16.101] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[14:50:16.102] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[14:50:16.102] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[14:50:33.630] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[31-07-2025]-[15:42:41.953] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[15:42:41.957] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[15:42:42.376] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[15:42:42.377] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[15:42:42.377] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[15:42:52.003] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[31-07-2025]-[15:43:12.680] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[15:43:12.682] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[15:43:12.830] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[15:43:12.831] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[15:43:12.831] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[15:43:19.181] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[15:43:22.123] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 3 productos
+[31-07-2025]-[15:43:59.905] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Buscando producto por ID: "b309a760-2927-4b87-ac95-7d0e6e2822a2"
+[31-07-2025]-[15:44:00.145] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto encontrado: string
+[31-07-2025]-[15:44:38.672] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Buscando producto por ID: "78eb8127-9728-4d22-9169-54d13b831241"
+[31-07-2025]-[15:44:38.692] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto encontrado: SKU001
+[31-07-2025]-[15:45:05.247] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[31-07-2025]-[16:35:29.409] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[16:35:29.413] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[16:35:29.561] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[16:35:29.561] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[16:35:29.562] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[16:36:02.403] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[31-07-2025]-[16:36:09.423] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[16:36:09.425] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[16:36:09.540] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[16:36:09.543] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[16:36:09.543] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[16:36:58.009] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Buscando orden por ID: "bd7901d0-0aba-425f-af8c-a91e54ea492d"
+[31-07-2025]-[16:36:59.581] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Orden encontrada con ID: "bd7901d0-0aba-425f-af8c-a91e54ea492d"
+[31-07-2025]-[17:02:17.220] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[17:02:17.222] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[17:02:17.399] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[17:02:17.400] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[17:02:17.400] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[17:02:26.348] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[31-07-2025]-[17:07:03.079] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[17:07:03.081] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[17:07:03.248] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[17:07:03.249] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[17:07:03.249] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[19:17:12.446] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[19:17:12.448] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[19:17:12.565] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[19:17:12.566] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[19:17:12.566] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[19:18:11.120] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[19:18:13.693] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 3 productos
+[31-07-2025]-[19:18:30.409] [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+[31-07-2025]-[21:50:09.331] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[21:50:09.334] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[21:50:09.547] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[21:50:09.548] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[21:50:09.548] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[21:50:47.480] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[21:50:50.687] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 2 productos
+[31-07-2025]-[21:52:00.535] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "26ccd3d2-200b-438a-8eee-33e3d6ed559b"
+[31-07-2025]-[21:52:01.115] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Orden creada exitosamente con ID: "41c46ee2-b354-4ff2-a4e6-462b400bd902"
+[31-07-2025]-[21:52:06.209] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[21:52:06.224] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 2 productos
+[31-07-2025]-[21:58:38.931] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[31-07-2025]-[21:58:38.991] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto actualizado correctamente. SKU: SKU002
+[31-07-2025]-[21:58:59.321] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[31-07-2025]-[21:58:59.329] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Datos inválidos del producto: {"Sku":"SKU002","InternalCode":"INT002","Name":"Producto B","Description":"Descripción del Producto B","CurrentPrice":200,"StockQuantity":-20,"$type":"Request"}
+[31-07-2025]-[21:58:59.672] [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Los datos del producto no son válidos.
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateProductRequest(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 33
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 70
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[31-07-2025]-[21:59:42.618] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "26ccd3d2-200b-438a-8eee-33e3d6ed559b"
+[31-07-2025]-[21:59:42.741] [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: La cantidad debe ser mayor a 0 (Parameter 'quantity')
+   at Dsw2025Tpi.Domain.Entities.OrderItem..ctor(Product product, Guid productId, Int32 quantity, Decimal unitPrice) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\OrderItem.cs:line 45
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.<>c__DisplayClass4_0.<AddOrder>b__1(Request i) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 47
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 44
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[31-07-2025]-[21:59:51.981] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Obteniendo órdenes. Filtros - Estado: PENDING, Cliente: Todos, Página: 1, Tamaño: 10
+[31-07-2025]-[21:59:52.090] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Se encontraron 5 órdenes en la página 1
+[31-07-2025]-[22:00:06.819] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Buscando orden por ID: "0235b543-8bd0-46b5-9bbe-d8cb0fbd8376"
+[31-07-2025]-[22:00:06.863] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Orden encontrada con ID: "0235b543-8bd0-46b5-9bbe-d8cb0fbd8376"
+[31-07-2025]-[22:01:10.800] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Buscando orden por ID: "508f7486-4031-4663-aaf7-85e8219a9c2c"
+[31-07-2025]-[22:01:10.811] [WRN] Dsw2025Tpi.Application.Helpers.OrdersManagementServiceExtensions No se encontró ninguna orden con el ID: "508f7486-4031-4663-aaf7-85e8219a9c2c"
+[31-07-2025]-[22:01:10.887] [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Dsw2025Tpi.Application.Exceptions.NotFoundException: No se encontró la orden con el ID 508f7486-4031-4663-aaf7-85e8219a9c2c
+   at Dsw2025Tpi.Application.Helpers.OrdersManagementServiceExtensions.ValidateOrderNull(Guid Id, IEnumerable`1 orders) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\OrdersManagementServiceExtensions.cs:line 75
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.GetOrderById(Guid Id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 160
+   at Dsw2025Tpi.Api.Controllers.OrderController.GetOrderById(Guid id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 66
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[31-07-2025]-[22:02:06.831] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Actualizando estado de la orden "0235b543-8bd0-46b5-9bbe-d8cb0fbd8376" a '3'
+[31-07-2025]-[22:02:06.858] [WRN] Dsw2025Tpi.Application.Services.OrdersManagementService Estado inválido (numérico) para la orden: '3'
+[31-07-2025]-[22:02:06.920] [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: No se permite ingresar un número como estado. Usá uno válido.
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.UpdateOrderStatus(Guid id, String newStatusText) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 180
+   at Dsw2025Tpi.Api.Controllers.OrderController.UpdateOrderStatus(Guid id, UpdateOrderStatusRequest request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 97
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[31-07-2025]-[22:02:16.617] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Actualizando estado de la orden "0235b543-8bd0-46b5-9bbe-d8cb0fbd8376" a 'HOLA'
+[31-07-2025]-[22:02:16.623] [WRN] Dsw2025Tpi.Application.Services.OrdersManagementService Estado inválido: 'HOLA' no es parte del enum OrderStatus
+[31-07-2025]-[22:02:16.679] [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Estado de orden inválido. Debe ser uno válido.
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.UpdateOrderStatus(Guid id, String newStatusText) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 187
+   at Dsw2025Tpi.Api.Controllers.OrderController.UpdateOrderStatus(Guid id, UpdateOrderStatusRequest request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 97
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[31-07-2025]-[22:02:26.171] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Actualizando estado de la orden "0235b543-8bd0-46b5-9bbe-d8cb0fbd8376" a 'SHIPPED'
+[31-07-2025]-[22:02:26.203] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Estado de orden actualizado correctamente a: "SHIPPED"
+[31-07-2025]-[22:02:39.817] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Desactivando producto con ID: "508f7486-4031-4663-aaf7-85e8219a9c2c"
+[31-07-2025]-[22:02:39.824] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Producto no encontrado en la base de datos
+[31-07-2025]-[22:02:39.860] [ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Dsw2025Tpi.Application.Exceptions.NotFoundException: Producto no encontrado en la base de datos.
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateProductNull(Product product) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 66
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.DisableProduct(Guid Id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 96
+   at Dsw2025Tpi.Api.Controllers.ProductsController.DisableProduct(Guid id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 116
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[31-07-2025]-[22:17:49.792] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[22:17:49.796] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[22:17:49.978] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[22:17:49.981] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[22:17:49.981] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[22:19:02.941] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[22:19:04.817] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 2 productos
+[31-07-2025]-[22:19:45.893] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "26ccd3d2-200b-438a-8eee-33e3d6ed559b"
+[31-07-2025]-[22:19:45.902] [WRN] Dsw2025Tpi.Application.Helpers.OrdersManagementServiceExtensions Datos incompletos o inválidos para la orden: {"CustomerId":"26ccd3d2-200b-438a-8eee-33e3d6ed559b","ShippingAddress":"","BillingAddress":"a 123","OrderItems":[{"ProductId":"6d595902-eef3-401a-96b3-85367c8e733e","Quantity":15,"$type":"Request"}],"$type":"Request"}
+[31-07-2025]-[22:19:46.079] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Datos de la orden inválidos o incompletos.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Datos de la orden inválidos o incompletos.
+   at Dsw2025Tpi.Application.Helpers.OrdersManagementServiceExtensions.ValidateOrderRequest(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\OrdersManagementServiceExtensions.cs:line 35
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 36
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:19:59.230] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "26ccd3d2-200b-438a-8eee-33e3d6ed559b"
+[31-07-2025]-[22:19:59.732] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware La cantidad debe ser mayor a 0 (Parameter 'quantity')
+System.ArgumentOutOfRangeException: La cantidad debe ser mayor a 0 (Parameter 'quantity')
+   at Dsw2025Tpi.Domain.Entities.OrderItem..ctor(Product product, Guid productId, Int32 quantity, Decimal unitPrice) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\OrderItem.cs:line 45
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.<>c__DisplayClass4_0.<AddOrder>b__1(Request i) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 47
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 44
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:20:09.697] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Iniciando creación de orden para cliente "26ccd3d2-200b-438a-8eee-33e3d6ed559b"
+[31-07-2025]-[22:20:09.852] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware No hay stock suficiente
+System.ApplicationException: No hay stock suficiente
+   at Dsw2025Tpi.Domain.Entities.OrderItem..ctor(Product product, Guid productId, Int32 quantity, Decimal unitPrice) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\OrderItem.cs:line 48
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.<>c__DisplayClass4_0.<AddOrder>b__1(Request i) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 47
+   at System.Linq.Enumerable.SelectListIterator`2.Fill(ReadOnlySpan`1 source, Span`1 destination, Func`2 func)
+   at System.Linq.Enumerable.SelectListIterator`2.ToList()
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.AddOrder(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 44
+   at Dsw2025Tpi.Api.Controllers.OrderController.AddOrder(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:20:54.501] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Obteniendo órdenes. Filtros - Estado: Todos, Cliente: Todos, Página: 1, Tamaño: 10
+[31-07-2025]-[22:20:54.681] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Se encontraron 8 órdenes en la página 1
+[31-07-2025]-[22:22:13.275] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Buscando orden por ID: "863155d4-0f56-4299-a2b0-874ba354996c"
+[31-07-2025]-[22:22:13.330] [WRN] Dsw2025Tpi.Application.Helpers.OrdersManagementServiceExtensions No se encontró ninguna orden con el ID: "863155d4-0f56-4299-a2b0-874ba354996c"
+[31-07-2025]-[22:22:13.468] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware No se encontró la orden con el ID 863155d4-0f56-4299-a2b0-874ba354996c
+Dsw2025Tpi.Application.Exceptions.NotFoundException: No se encontró la orden con el ID 863155d4-0f56-4299-a2b0-874ba354996c
+   at Dsw2025Tpi.Application.Helpers.OrdersManagementServiceExtensions.ValidateOrderNull(Guid Id, IEnumerable`1 orders) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\OrdersManagementServiceExtensions.cs:line 75
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.GetOrderById(Guid Id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 160
+   at Dsw2025Tpi.Api.Controllers.OrderController.GetOrderById(Guid id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 66
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:22:30.675] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Buscando orden por ID: "601f7c91-baae-4157-b0d4-61c050c04cdc"
+[31-07-2025]-[22:22:30.690] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Orden encontrada con ID: "601f7c91-baae-4157-b0d4-61c050c04cdc"
+[31-07-2025]-[22:22:43.559] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Actualizando estado de la orden "601f7c91-baae-4157-b0d4-61c050c04cdc" a '3'
+[31-07-2025]-[22:22:43.596] [WRN] Dsw2025Tpi.Application.Services.OrdersManagementService Estado inválido (numérico) para la orden: '3'
+[31-07-2025]-[22:22:43.747] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware No se permite ingresar un número como estado. Usá uno válido.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: No se permite ingresar un número como estado. Usá uno válido.
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.UpdateOrderStatus(Guid id, String newStatusText) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 180
+   at Dsw2025Tpi.Api.Controllers.OrderController.UpdateOrderStatus(Guid id, UpdateOrderStatusRequest request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 97
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:22:53.332] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Actualizando estado de la orden "601f7c91-baae-4157-b0d4-61c050c04cdc" a 'HOLA'
+[31-07-2025]-[22:22:53.354] [WRN] Dsw2025Tpi.Application.Services.OrdersManagementService Estado inválido: 'HOLA' no es parte del enum OrderStatus
+[31-07-2025]-[22:22:53.462] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Estado de orden inválido. Debe ser uno válido.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Estado de orden inválido. Debe ser uno válido.
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.UpdateOrderStatus(Guid id, String newStatusText) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 187
+   at Dsw2025Tpi.Api.Controllers.OrderController.UpdateOrderStatus(Guid id, UpdateOrderStatusRequest request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 97
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:24:42.187] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Actualizando estado de la orden "601f7c91-baae-4157-b0d4-61c050c04cdc" a 'hola'
+[31-07-2025]-[22:24:42.193] [WRN] Dsw2025Tpi.Application.Services.OrdersManagementService Estado inválido: 'hola' no es parte del enum OrderStatus
+[31-07-2025]-[22:24:42.336] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Estado de orden inválido. Debe ser uno válido.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Estado de orden inválido. Debe ser uno válido.
+   at Dsw2025Tpi.Application.Services.OrdersManagementService.UpdateOrderStatus(Guid id, String newStatusText) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\OrdersManagementService.cs:line 187
+   at Dsw2025Tpi.Api.Controllers.OrderController.UpdateOrderStatus(Guid id, UpdateOrderStatusRequest request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\OrderController.cs:line 97
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:28:05.692] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[22:28:05.696] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[22:28:05.900] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[22:28:05.902] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[22:28:05.902] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[22:28:14.282] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Obteniendo órdenes. Filtros - Estado: Todos, Cliente: Todos, Página: 1, Tamaño: 10
+[31-07-2025]-[22:28:16.552] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Se encontraron 8 órdenes en la página 1
+[31-07-2025]-[22:28:34.787] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Actualizando estado de la orden "2926fc02-16ca-4acf-9a0a-04b5bff58459" a 'Pending'
+[31-07-2025]-[22:28:35.075] [INF] Dsw2025Tpi.Application.Services.OrdersManagementService Estado de orden actualizado correctamente a: "PENDING"
+[31-07-2025]-[22:29:22.891] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU003
+[31-07-2025]-[22:29:23.081] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+System.ArgumentOutOfRangeException: El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+   at Dsw2025Tpi.Domain.Entities.Product..ctor(String sku, String internalCode, String name, String description, Decimal currentPrice, Int32 stockQuantity) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 43
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.AddProduct(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 36
+   at Dsw2025Tpi.Api.Controllers.ProductsController.AddProduct(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:29:33.488] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU003
+[31-07-2025]-[22:29:33.572] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El precio no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+System.ArgumentOutOfRangeException: El precio no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+   at Dsw2025Tpi.Domain.Entities.Product..ctor(String sku, String internalCode, String name, String description, Decimal currentPrice, Int32 stockQuantity) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 45
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.AddProduct(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 36
+   at Dsw2025Tpi.Api.Controllers.ProductsController.AddProduct(Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:30:27.073] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU003
+[31-07-2025]-[22:30:27.175] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto creado correctamente: SKU003
+[31-07-2025]-[22:30:31.530] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[22:30:31.547] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 3 productos
+[31-07-2025]-[22:30:47.493] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Buscando producto por ID: "76f86f61-0bc3-4d15-bca1-37983532d1e4"
+[31-07-2025]-[22:30:47.506] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Producto no encontrado con ID: "76f86f61-0bc3-4d15-bca1-37983532d1e4"
+[31-07-2025]-[22:30:47.672] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware No se encontró un producto con el ID: 76f86f61-0bc3-4d15-bca1-37983532d1e4.
+Dsw2025Tpi.Application.Exceptions.NotFoundException: No se encontró un producto con el ID: 76f86f61-0bc3-4d15-bca1-37983532d1e4.
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.GetProductOrThrow(Guid id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 42
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.GetProductById(Guid id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 60
+   at Dsw2025Tpi.Api.Controllers.ProductsController.GetProductBySku(Guid id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 76
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[22:30:56.909] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Buscando producto por ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[31-07-2025]-[22:30:56.927] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto encontrado: SKU002
+[31-07-2025]-[22:31:39.204] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "7fdab021-3408-473e-9e4e-dfff3bd34603"
+[31-07-2025]-[22:31:39.236] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto actualizado correctamente. SKU: SKU003
+[31-07-2025]-[22:44:04.172] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[22:44:04.176] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[22:44:04.340] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[22:44:04.341] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[22:44:04.342] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[22:44:10.571] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[22:48:17.763] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[22:48:17.769] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[22:48:17.955] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[22:48:17.956] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[22:48:17.956] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[22:48:24.627] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[23:27:39.921] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[23:27:39.923] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[23:27:40.054] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[23:27:40.055] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[23:27:40.055] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[23:27:50.645] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[23:27:52.040] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 3 productos
+[31-07-2025]-[23:29:55.264] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[31-07-2025]-[23:29:55.580] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto actualizado correctamente. SKU: SKU002
+[31-07-2025]-[23:35:23.017] [INF] Microsoft.Hosting.Lifetime Now listening on: https://localhost:7138
+[31-07-2025]-[23:35:23.020] [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5142
+[31-07-2025]-[23:35:23.176] [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+[31-07-2025]-[23:35:23.177] [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+[31-07-2025]-[23:35:23.178] [INF] Microsoft.Hosting.Lifetime Content root path: C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api
+[31-07-2025]-[23:35:30.935] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[31-07-2025]-[23:35:32.679] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 3 productos
+[31-07-2025]-[23:36:20.505] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[31-07-2025]-[23:36:20.870] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto actualizado correctamente. SKU: SKU002
+[31-07-2025]-[23:36:26.581] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[31-07-2025]-[23:36:26.930] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+System.ArgumentOutOfRangeException: El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+   at Dsw2025Tpi.Domain.Entities.Product.Update(String sku, String internalCode, String name, String description, Decimal currentPrice, Nullable`1 stockQuantity) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 60
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 78
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[23:36:40.254] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[31-07-2025]-[23:36:40.382] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+System.ArgumentOutOfRangeException: El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+   at Dsw2025Tpi.Domain.Entities.Product.Update(String sku, String internalCode, String name, String description, Decimal currentPrice, Nullable`1 stockQuantity) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 66
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 78
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[31-07-2025]-[23:36:50.055] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Desactivando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[31-07-2025]-[23:36:50.085] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto desactivado correctamente. SKU: SKU002
+[31-07-2025]-[23:37:36.005] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Desactivando producto con ID: "6238a637-3c4d-4ec5-95c2-a92b3bb094be"
+[31-07-2025]-[23:37:36.015] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Producto no encontrado en la base de datos
+[31-07-2025]-[23:37:36.130] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Producto no encontrado en la base de datos.
+Dsw2025Tpi.Application.Exceptions.NotFoundException: Producto no encontrado en la base de datos.
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateProductNull(Product product) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 65
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.DisableProduct(Guid Id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 93
+   at Dsw2025Tpi.Api.Controllers.ProductsController.DisableProduct(Guid id) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 116
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Admin\Desktop\UTN\TERCER AÑO\Desarrollo de Software\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28

@@ -1,0 +1,194 @@
+[15-10-2025]-[11:21:20.613] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Passwords must be at least 8 characters.; Passwords must have at least one non alphanumeric character.; Passwords must have at least one uppercase ('A'-'Z').
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Passwords must be at least 8 characters.; Passwords must have at least one non alphanumeric character.; Passwords must have at least one uppercase ('A'-'Z').
+   at Dsw2025Tpi.Api.Controllers.AuthenticateController.RegisterAdmin(RegisterModel model) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\AuthenticateController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[15-10-2025]-[11:21:36.351] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Passwords must have at least one non alphanumeric character.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Passwords must have at least one non alphanumeric character.
+   at Dsw2025Tpi.Api.Controllers.AuthenticateController.RegisterAdmin(RegisterModel model) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\AuthenticateController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[15-10-2025]-[11:22:11.106] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Generando token JWT para el usuario: Tomi con rol: Admin
+[15-10-2025]-[11:22:11.140] [INF] Dsw2025Tpi.Application.Services.JwtTokenService Token JWT generado exitosamente para el usuario: Tomi
+[15-10-2025]-[11:22:43.012] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Obteniendo lista de todos los productos
+[15-10-2025]-[11:22:43.188] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Se encontraron 23 productos
+[15-10-2025]-[11:23:00.349] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Buscando producto por ID: "cbf940d1-9e47-4799-9a45-16ee94cc2fc6"
+[15-10-2025]-[11:23:00.361] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto encontrado: SKU-1007
+[15-10-2025]-[11:25:06.363] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1068
+[15-10-2025]-[11:25:06.431] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto creado correctamente: SKU-1068
+[15-10-2025]-[11:25:34.809] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: SKU-1068
+[15-10-2025]-[11:25:34.815] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Intento de duplicación de producto con SKU existente: SKU-1068
+[15-10-2025]-[11:25:35.044] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Ya existe un producto con el Sku SKU-1068
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Ya existe un producto con el Sku SKU-1068
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateDuplicatedProductAsync(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 84
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 39
+   at Dsw2025Tpi.Api.Controllers.ProductsController.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[15-10-2025]-[11:26:13.679] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Iniciando creación de producto con SKU: 
+[15-10-2025]-[11:26:13.688] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Datos inválidos del producto: {"Sku":"","InternalCode":"INT-1059","Name":"Auriculares","Description":"Auriculares Gamer USB","CurrentPrice":35000,"StockQuantity":20,"$type":"Request"}
+[15-10-2025]-[11:26:13.864] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Los datos del producto no son válidos.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Los datos del producto no son válidos.
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateProductRequest(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 33
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 36
+   at Dsw2025Tpi.Api.Controllers.ProductsController.AddProduct(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[15-10-2025]-[11:29:47.917] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6979daf6-2ba5-4e5c-9f56-4b3ced4926aa"
+[15-10-2025]-[11:29:47.937] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Intento de duplicación de producto con SKU existente: SKU001
+[15-10-2025]-[11:29:48.075] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Ya existe un producto con el Sku SKU001
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Ya existe un producto con el Sku SKU001
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateDuplicatedProductUpdateAsync(Request request, Guid Id) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 96
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 89
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[15-10-2025]-[11:31:25.269] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6979daf6-2ba5-4e5c-9f56-4b3ced4926aa"
+[15-10-2025]-[11:31:25.272] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Datos inválidos del producto: {"Sku":"","InternalCode":"string","Name":"string","Description":"string","CurrentPrice":0,"StockQuantity":0,"$type":"Request"}
+[15-10-2025]-[11:31:25.363] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Los datos del producto no son válidos.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Los datos del producto no son válidos.
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateProductRequest(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 33
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 84
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[15-10-2025]-[11:32:08.452] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Desactivando producto con ID: "cbf940d1-9e47-4799-9a45-16ee94cc2fc6"
+[15-10-2025]-[11:32:08.468] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto desactivado correctamente. SKU: SKU-1007
+[15-10-2025]-[11:32:26.765] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Buscando producto por ID: "cbf940d1-9e47-4799-9a45-16ee94cc2fc6"
+[15-10-2025]-[11:32:26.770] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Producto encontrado: SKU-1007
+[15-10-2025]-[11:33:33.536] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[15-10-2025]-[11:33:33.700] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+System.ArgumentOutOfRangeException: El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+   at Dsw2025Tpi.Domain.Entities.Product.Update(String sku, String internalCode, String name, String description, Decimal currentPrice, Nullable`1 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 57
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 92
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[15-10-2025]-[11:33:47.034] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[15-10-2025]-[11:33:47.166] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+System.ArgumentOutOfRangeException: El precio no debe ser menor o igual a 0 (Parameter 'currentPrice')
+   at Dsw2025Tpi.Domain.Entities.Product.Update(String sku, String internalCode, String name, String description, Decimal currentPrice, Nullable`1 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 57
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 92
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[15-10-2025]-[11:33:59.749] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[15-10-2025]-[11:33:59.885] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+System.ArgumentOutOfRangeException: El stock no debe ser menor o igual a 0 (Parameter 'stockQuantity')
+   at Dsw2025Tpi.Domain.Entities.Product.Update(String sku, String internalCode, String name, String description, Decimal currentPrice, Nullable`1 stockQuantity) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Domain\Entities\Product.cs:line 59
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 92
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
+[15-10-2025]-[11:34:18.184] [INF] Dsw2025Tpi.Application.Services.ProductsManagementService Actualizando producto con ID: "6d595902-eef3-401a-96b3-85367c8e733e"
+[15-10-2025]-[11:34:18.184] [WRN] Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions Datos inválidos del producto: {"Sku":"","InternalCode":"string","Name":"string","Description":"string","CurrentPrice":100,"StockQuantity":20,"$type":"Request"}
+[15-10-2025]-[11:34:18.315] [ERR] Dsw2025Tpi.Api.Middleware.ExceptionMiddleware Los datos del producto no son válidos.
+Dsw2025Tpi.Application.Exceptions.BadRequestException: Los datos del producto no son válidos.
+   at Dsw2025Tpi.Application.Helpers.ProductsManagmentServiceExtensions.ValidateProductRequest(Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Helpers\ProductsManagmentServiceExtensions.cs:line 33
+   at Dsw2025Tpi.Application.Services.ProductsManagementService.Update(Guid Id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Application\Services\ProductsManagementService.cs:line 84
+   at Dsw2025Tpi.Api.Controllers.ProductsController.UpdateProduct(Guid id, Request request) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Controllers\ProductController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Dsw2025Tpi.Api.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\tomas\OneDrive\Escritorio\UTN\3ER AÑO\Desarrollo de software\1er Cuat (BackEnd)\Unidad 2\TPI\Dsw2025Tpi\Dsw2025Tpi.Api\Middleware\ExceptionMiddleware.cs:line 28
