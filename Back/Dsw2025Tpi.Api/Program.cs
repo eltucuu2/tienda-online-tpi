@@ -88,8 +88,13 @@ public class Program
         }
 
         
-        app.UseSwagger();
-        app.UseSwaggerUI();    
+        if (app.Environment.IsDevelopment() || app.Configuration.GetValue<bool>("EnableSwagger")) 
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(); 
+} // app.Environment.IsDevelopment() mantiene Swagger disponible localmente cuando desarrollamos y
+  // app.Configuration.GetValue<bool>("EnableSwagger") permite encender Swagger en Azure sin tocar el código.
+ 
         app.UseHttpsRedirection();
         app.UseCors("AllowReactFrontend");
         app.UseCustomMiddlewares();
