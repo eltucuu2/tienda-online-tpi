@@ -8,8 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  # Usamos secretos para no exponer datos sensibles
-  DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+  DOCKERHUB_USERNAME: fabriziolegutn
   # Nombre de tu imagen (manteniendo el mismo nombre)
   IMAGE_NAME: dsw2025tpi-api
 
