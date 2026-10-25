@@ -1,0 +1,28 @@
+name: CI/CD - Dsw2025Tpi API
+
+# Disparadores: push (incluye el merge de un PR) y Pull Requests hacia las ramas principales
+on:
+  push:
+    branches: [development, main]
+  pull_request:
+    branches: [development, main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener el código
+        uses: actions/checkout@v4
+
+      - name: Información de la ejecución
+        run: |
+          echo "Evento:  ${{ github.event_name }}"
+          echo "Rama:    ${{ github.ref_name }}"
+          echo "Commit:  ${{ github.sha }}"
+          echo "Autor:   ${{ github.actor }}"
+
+      # Las etapas de restore, build, imagen Docker y despliegue se agregan en las tarjetas
+      # "Etapas del Pipeline" y "Despliegue a Hosting Gratuito"
