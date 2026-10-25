@@ -8,6 +8,12 @@ on:
     branches: [development, main]
   workflow_dispatch:
 
+env:
+  DOTNET_VERSION: '8.0.x'
+  SOLUTION_PATH: Back/Dsw2025Tpi.sln
+  API_PROJECT: Back/Dsw2025Tpi.Api/Dsw2025Tpi.Api.csproj
+  IMAGE_NAME: dsw2025tpi-api
+
 jobs:
   build:
     name: build
@@ -24,5 +30,28 @@ jobs:
           echo "Commit:  ${{ github.sha }}"
           echo "Autor:   ${{ github.actor }}"
 
-      # Las etapas de restore, build, imagen Docker y despliegue se agregan en las tarjetas
-      # "Etapas del Pipeline" y "Despliegue a Hosting Gratuito"
+      - name: Configurar .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restaurar dependencias (dotnet restore)
+        run: dotnet restore ${{ env.SOLUTION_PATH }}
+
+      - name: Compilar la solución (dotnet build)
+        run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Release --no-restore
+
+      - name: Construir la imagen Docker
+        run: docker build -t ${{ env.IMAGE_NAME }}:${{ github.sha }} -f Back/Dockerfile ./Back
+
+      - name: Publicar la API (dotnet publish)
+        run: dotnet publish ${{ env.API_PROJECT }} --configuration Release --no-build --output ./publish
+
+      - name: Guardar el artefacto compilado
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-publish
+          path: ./publish
+          retention-days: 7
+
+      # El despliegue a Azure se agrega en la tarjeta "Despliegue a Hosting Gratuito"
