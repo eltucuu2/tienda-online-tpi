@@ -36,3 +36,16 @@ jobs:
         run: |
           docker push ${{ env.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
           docker push ${{ env.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+
+      - name: 5. Autenticación en Azure
+        if: github.event_name != 'pull_request'
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: 6. Despliegue en Azure Web App
+        if: github.event_name != 'pull_request'
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'NOMBRE_DE_TU_WEBAPP_EN_AZURE'
+          images: '${{ env.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest'
