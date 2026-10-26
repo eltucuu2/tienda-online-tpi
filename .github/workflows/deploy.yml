@@ -82,6 +82,8 @@ jobs:
 
       # Prueba de humo: la app puede tardar en arrancar (plan F1 y base serverless pausada)
       - name: Verificar la API desplegada (smoke test)
+        # shell: bash activa pipefail, así un error de curl no queda oculto por el pipe a head
+        shell: bash
         run: |
           curl --fail --silent --show-error --retry 10 --retry-delay 15 --retry-all-errors --max-time 60 \
             https://${{ env.WEBAPP_HOST }}/healthcheck
