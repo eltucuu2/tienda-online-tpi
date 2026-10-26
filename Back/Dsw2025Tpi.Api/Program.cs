@@ -88,11 +88,9 @@ public class Program
             }
         }
 
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
+        // Swagger habilitado en todos los entornos para poder probar la API publicada en Azure
+        app.UseSwagger();
+        app.UseSwaggerUI();
 
         app.UseHttpsRedirection();
         app.UseCors("AllowReactFrontend");
