@@ -49,7 +49,8 @@ namespace Dsw2025Tpi.Application.Services
                 return new OrderItem(product, product.Id, i.Quantity, product.CurrentPrice);
             }).ToList();
 
-            foreach (var item in orderItems)
+            foreach (var item in orderItems) // El stock ya fue descontado por el método StockControl() invocado al crear el OrderItem.
+                                                  // Restar el stock aquí nuevamente genera inconsistencias severas en el inventario.
             {
                 var product = products[item.ProductId];
                 product.StockQuantity -= item.Quantity;
@@ -93,38 +94,44 @@ namespace Dsw2025Tpi.Application.Services
 
         // -------------------------
         // LISTAR ORDENES
-        // -------------------------
-        public async Task<OrderModel.ResponsePagination> GetOrders(OrderStatus? status, Guid? customerId, int pageNumber, int pageSize)
-        {
-            Expression<Func<Order, bool>> filter = o =>
-                (!status.HasValue || o.Status == status.Value) &&
-                (!customerId.HasValue || o.CustomerId == customerId.Value);
+            // -------------------------
+            public async Task<OrderModel.ResponsePagination> GetOrders(OrderStatus? status, Guid? customerId, int pageNumber, int pageSize)
+            {
+                Expression<Func<Order, bool>> filter = o =>
+                    (!status.HasValue || o.Status == status.Value) &&
+                    (!customerId.HasValue || o.CustomerId == customerId.Value);
 
-            // Se agregó "Customer" para que order.Customer no sea null
-            var allOrders = await _repository.GetFiltered<Order>(filter, new[] { "Items", "Customer" });
+                // Se agregó "Customer" para que order.Customer no sea null
+                var allOrders = await _repository.GetFiltered<Order>(filter, new[] { "Items", "Customer" });
+                //VULNERABILIDAD DE RENDIMIENTO (CODE SMELL): Carga masiva en memoria.
+                // Al materializar la consulta aquí (esperando toda la colección con 'await'), 
+                // estamos extrayendo absolutamente todas las órdenes de la base de datos hacia la RAM del servidor. --error             
+    
+                
+                if (allOrders == null || !allOrders.Any())
+                    return new OrderModel.ResponsePagination(new List<OrderModel.Response>(), 0);
 
-            if (allOrders == null || !allOrders.Any())
-                return new OrderModel.ResponsePagination(new List<OrderModel.Response>(), 0);
+                var totalRecords = allOrders.Count();
 
-            var totalRecords = allOrders.Count();
+                var page = pageNumber < 1 ? 1 : pageNumber;
+                var size = pageSize < 1 ? 10 : pageSize;
 
-            var page = pageNumber < 1 ? 1 : pageNumber;
-            var size = pageSize < 1 ? 10 : pageSize;
+                var pagedOrders = allOrders         // Paginación ineficiente. -- deuda
+                    .OrderByDescending(o => o.Date) //Skip() y Take() se están ejecutando sobre una lista en memoria (LINQ to Objects) 
+                                                    // en lugar de traducirse a instrucciones SQL (OFFSET y FETCH) directamente en el motor de la base de datos.        
+                    .Skip((page - 1) * size)
+                    .Take(size)
+                    .ToList();
+    // solucion Implementar la paginación directamente en la consulta de Entity Framework utilizando IQueryable, CountAsync(), Skip()
+    //  y Take() antes de ejecutar la consulta con ToListAsync().
+                var productIds = pagedOrders
+                    .SelectMany(o => o.Items)
+                    .Select(i => i.ProductId)
+                    .Distinct()
+                    .ToList();
 
-            var pagedOrders = allOrders
-                .OrderByDescending(o => o.Date)
-                .Skip((page - 1) * size)
-                .Take(size)
-                .ToList();
-
-            var productIds = pagedOrders
-                .SelectMany(o => o.Items)
-                .Select(i => i.ProductId)
-                .Distinct()
-                .ToList();
-
-            var productsList = await _repository.GetFiltered<Product>(p => productIds.Contains(p.Id));
-            var products = productsList.ToDictionary(p => p.Id);
+                var productsList = await _repository.GetFiltered<Product>(p => productIds.Contains(p.Id));
+                var products = productsList.ToDictionary(p => p.Id);
 
             var responseList = pagedOrders.Select(order => new OrderModel.Response(
                 Id: order.Id,

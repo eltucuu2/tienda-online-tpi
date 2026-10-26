@@ -53,7 +53,7 @@ function RegisterPage() {
           navigate('/admin');      // ⬅️ ruta del panel Admin
         } else {
           navigate('/');           // ⬅️ ruta del catálogo / productos
-        }
+        } 
       }, 1500);
 
     } catch (error) {

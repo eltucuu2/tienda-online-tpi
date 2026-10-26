@@ -56,7 +56,9 @@ namespace Dsw2025Tpi.Api.Controllers
             });
         }
 
-        [HttpPost("registerAdmin")]
+        [HttpPost("registerAdmin")] // VULNERABILIDAD: Falta de control de acceso (Broken Access Control).
+// Al no tener el atributo [Authorize(Roles = "Admin")] aquí arriba, este endpoint es público. --- deuda
+// Esto viola el principio de "Secure by Default" (Seguridad por Defecto).
         public async Task<IActionResult> RegisterAdmin([FromBody] RegisterModel model)
         {
             if (string.IsNullOrWhiteSpace(model.Username) || string.IsNullOrWhiteSpace(model.Email))
@@ -85,7 +87,8 @@ namespace Dsw2025Tpi.Api.Controllers
                 PhoneNumber = model.PhoneNumber // <--- Agregado
             };
 
-            var result = await _userManager.CreateAsync(user, model.Password);
+            var result = await _userManager.CreateAsync(user, model.Password);  // PROBLEMA: Ejecución de lógica sensible sin validación de identidad.
+                                                                                // Cualquier persona con acceso a la red puede llegar a esta línea y registrar una cuenta.
 
             if (!result.Succeeded)
             {
@@ -93,13 +96,15 @@ namespace Dsw2025Tpi.Api.Controllers
                 throw new BadRequestException(errors);
             }
 
-            var roleResult = await _userManager.AddToRoleAsync(user, "Admin");
+            var roleResult = await _userManager.AddToRoleAsync(user, "Admin");   //VULNERABILIDAD CRÍTICA: Escalamiento de privilegios directo.
+                                                                                 // Se le asigna el rol máximo ("Admin") a la cuenta recién creada de forma incondicional.
+                                                                                 // Esto rompe directamente el "Principle of Least Privilege" (Principio de Mínimo Privilegio).
 
             if (!roleResult.Succeeded)
             {
                 var errors = string.Join("; ", roleResult.Errors.Select(e => e.Description));
                 throw new BadRequestException(errors);
-            }
+            }   
 
             return Ok("Usuario registrado correctamente con rol de administrador.");
         }

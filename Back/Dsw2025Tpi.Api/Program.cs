@@ -75,10 +75,11 @@ public class Program
                 }
 
                 // 4. CARGAR DATOS
-                context.Seedwork<Customer>("Sources\\customers.json");
-                context.Seedwork<Product>("Sources\\products.json");
-                context.Seedwork<Order>("Sources\\orders.json");
-                context.Seedwork<OrderItem>("Sources\\orderitems.json");
+                // Path.Combine para que funcione en Linux (Docker / Azure)
+                context.Seedwork<Customer>(Path.Combine("Sources", "customers.json"));
+                context.Seedwork<Product>(Path.Combine("Sources", "products.json"));
+                context.Seedwork<Order>(Path.Combine("Sources", "orders.json"));
+                context.Seedwork<OrderItem>(Path.Combine("Sources", "orderitems.json"));
             }
             catch (Exception ex)
             {

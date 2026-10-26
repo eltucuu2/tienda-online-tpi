@@ -36,4 +36,4 @@ export const updateOrderStatus = async (id, newStatus) => {
   } catch (error) {
     return { data: null, error: error };
   }
-};
+}; 

@@ -40,7 +40,7 @@ namespace Dsw2025Tpi.Api.Controllers
             return Created($"/api/order/{order.Id}", order);
         }
 
-        // Endpoint para obtener una lista paginada de órdenes (admin y cliente)
+        //   Endpoint para obtener una lista paginada de órdenes (admin y cliente)
        [HttpGet]
 [Authorize(Roles = "Admin, Customer")]
 public async Task<IActionResult> GetOrders(
