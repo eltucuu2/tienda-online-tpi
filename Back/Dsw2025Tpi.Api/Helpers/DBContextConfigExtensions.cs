@@ -11,11 +11,14 @@ namespace Dsw2025Tpi.Api.Helpers
         {
             var connection = config.GetConnectionString("Dsw2025TpiEntities");
 
+            // Reintentos ante fallas transitorias: Azure SQL serverless tarda en reactivarse si estaba pausada
             services.AddDbContext<AuthenticateContext>(options =>
-                options.UseSqlServer(connection));
+                options.UseSqlServer(connection, sql => sql.EnableRetryOnFailure(
+                    maxRetryCount: 6, maxRetryDelay: TimeSpan.FromSeconds(30), errorNumbersToAdd: null)));
 
-                services.AddDbContext<Dsw2025TpiContext>(options =>
-                options.UseSqlServer(connection));
+            services.AddDbContext<Dsw2025TpiContext>(options =>
+                options.UseSqlServer(connection, sql => sql.EnableRetryOnFailure(
+                    maxRetryCount: 6, maxRetryDelay: TimeSpan.FromSeconds(30), errorNumbersToAdd: null)));
 
             return services;
         }
