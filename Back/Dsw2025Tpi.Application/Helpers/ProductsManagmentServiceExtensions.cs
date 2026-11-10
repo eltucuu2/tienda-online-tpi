@@ -24,16 +24,28 @@ namespace Dsw2025Tpi.Application.Helpers
             _repository = repository;
             _logger = logger;
         }
-        public void ValidateProductRequest(ProductModel.Request request)
-        {
-            if (string.IsNullOrWhiteSpace(request.Sku) ||
-                string.IsNullOrWhiteSpace(request.Name)
-                || string.IsNullOrWhiteSpace(request.InternalCode))
-            {
-                _logger.LogWarning("Datos inválidos del producto: {@Request}", request);
-                throw new BadRequestException("Los datos del producto no son válidos.");
-            }
-        }
+       public void ValidateProductRequest(ProductModel.Request request)
+{
+    // 1. NUEVO: Validamos los números primero
+    if (request.CurrentPrice <= 0)
+    {
+        throw new ArgumentOutOfRangeException(nameof(request.CurrentPrice), "El precio no debe ser menor o igual a 0");
+    }
+
+    if (request.StockQuantity <= 0)
+    {
+        throw new ArgumentOutOfRangeException(nameof(request.StockQuantity), "El stock no debe ser menor o igual a 0");
+    }
+
+    // 2. Lo que ya tenías para validar strings
+    if (string.IsNullOrWhiteSpace(request.Sku) ||
+        string.IsNullOrWhiteSpace(request.Name)
+        || string.IsNullOrWhiteSpace(request.InternalCode))
+    {
+        _logger.LogWarning("Datos inválidos del producto: {@Request}", request);
+        throw new BadRequestException("Los datos del producto no son válidos.");
+    }
+}
 
         public async Task<Product> GetProductOrThrow(Guid id)
         {
