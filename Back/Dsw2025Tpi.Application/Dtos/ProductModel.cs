@@ -35,7 +35,7 @@ namespace Dsw2025Tpi.Application.Dtos
         public record FilterProduct(string? Status, string? Search, int PageNumber, int PageSize);
 
         // DTO para devolver la lista paginada y el total
-        public record ResponsePagination(IEnumerable<Response> ProductItems, int Total);
+        public record ResponsePagination(IEnumerable<Response> ProductItems, int TotalItems);
     }
 }
 

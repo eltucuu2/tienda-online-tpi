@@ -15,7 +15,7 @@ function Home() {
         const ordRes = await getOrders(1, 1, 'all');
 
         setStats({
-          products: prodRes.data?.total || prodRes.data?.length || 0,
+          products: prodRes.data?.totalItems || prodRes.data?.length || 0,
           orders: ordRes.data?.total || ordRes.data?.length || 0
         });
       } catch (error) {

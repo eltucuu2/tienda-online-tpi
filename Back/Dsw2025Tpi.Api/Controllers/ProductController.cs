@@ -53,12 +53,15 @@ namespace Dsw2025Tpi.Api.Controllers
         
         [HttpGet]
         [AllowAnonymous]
-        public async Task<IActionResult> GetPublicProducts()
+        public async Task<IActionResult> GetPublicProducts(
+            [FromQuery] string? search,
+            [FromQuery] int pageNumber = 1,
+            [FromQuery] int pageSize = 100)
         {
-            // Ejemplo: Traer solo activos, página 1, 100 productos
-            var filter = new ProductModel.FilterProduct("enabled", null, 1, 100);
+            // El catálogo público solo muestra productos activos
+            var filter = new ProductModel.FilterProduct("enabled", search, pageNumber, pageSize);
             var result = await _service.GetProducts(filter);
-            return Ok(result?.ProductItems); // Retorna solo la lista para compatibilidad simple
+            return Ok(result);
         }
 
         // === GET: api/products/{id} ===
