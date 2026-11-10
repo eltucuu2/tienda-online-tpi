@@ -13,6 +13,8 @@ env:
   SOLUTION_PATH: Back/Dsw2025Tpi.sln
   API_PROJECT: Back/Dsw2025Tpi.Api/Dsw2025Tpi.Api.csproj
   IMAGE_NAME: dsw2025tpi-api
+  AZURE_WEBAPP_NAME: DSW2026-API
+  WEBAPP_HOST: dsw2026-api-gqd9fhc3f9fde8bf.centralus-01.azurewebsites.net
 
 jobs:
   build:
@@ -54,4 +56,35 @@ jobs:
           path: ./publish
           retention-days: 7
 
-      # El despliegue a Azure se agrega en la tarjeta "Despliegue a Hosting Gratuito"
+  deploy:
+    name: deploy
+    needs: build
+    # Solo se despliega desde main (push/merge o ejecución manual), nunca desde un Pull Request
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://${{ env.WEBAPP_HOST }}
+
+    steps:
+      - name: Descargar el artefacto compilado
+        uses: actions/download-artifact@v4
+        with:
+          name: api-publish
+          path: ./publish
+
+      - name: Desplegar en Azure App Service
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ./publish
+
+      # Prueba de humo: la app puede tardar en arrancar (plan F1 y base serverless pausada)
+      - name: Verificar la API desplegada (smoke test)
+        run: |
+          curl --fail --silent --show-error --retry 10 --retry-delay 15 --retry-all-errors --max-time 60 \
+            https://${{ env.WEBAPP_HOST }}/healthcheck
+          echo
+          curl --fail --silent --show-error --retry 5 --retry-delay 15 --retry-all-errors --max-time 60 \
+            https://${{ env.WEBAPP_HOST }}/api/products | head -c 300
