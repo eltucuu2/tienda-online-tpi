@@ -62,7 +62,7 @@ namespace Dsw2025Tpi.Domain.Entities
 
         public bool StockControl (int quantity)
         {
-            if (quantity < StockQuantity)
+            if (quantity <= StockQuantity)
             {
                 StockQuantity -= quantity;
                 return true;

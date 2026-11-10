@@ -46,7 +46,7 @@ namespace Dsw2025Tpi.Api.Middleware
                 };
 
                 object response;
-                if (_env.IsDevelopment())
+                if (_env.IsDevelopment() || context.Response.StatusCode < 500)
                 {
                     response = (new {message = ex.Message}); // Aqui va el new ApiError()
                 }
