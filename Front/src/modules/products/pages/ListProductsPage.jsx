@@ -33,7 +33,7 @@ function ListProductsPage() {
       if (error) throw error;
 
       if (data.productItems) {
-          setTotal(data.total);
+          setTotal(data.totalItems);
           setProducts(data.productItems);
       } else if (Array.isArray(data)) {
           setTotal(data.length);

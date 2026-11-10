@@ -51,7 +51,8 @@ function CatalogPage() {
         if (!response.ok) response = await fetch("http://localhost:3000/api/Product", fetchOptions);
 
         if (response.ok) {
-          apiData = await response.json();
+          const json = await response.json();
+          apiData = json.productItems ?? json;
         } else {
           throw new Error("Backend no disponible");
         }
