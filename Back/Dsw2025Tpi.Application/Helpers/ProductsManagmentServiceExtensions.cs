@@ -29,7 +29,7 @@ namespace Dsw2025Tpi.Application.Helpers
     // 1. NUEVO: Validamos los números primero
     if (request.CurrentPrice <= 0)
     {
-        throw new ArgumentOutOfRangeException(nameof(request.CurrentPrice), "El precio no debe ser menor o igual a 0");
+        throw new BadRequestException("El precio o el stock no son válidos.");
     }
 
     if (request.StockQuantity <= 0)
