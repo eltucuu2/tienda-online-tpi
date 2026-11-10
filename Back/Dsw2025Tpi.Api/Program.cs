@@ -75,11 +75,14 @@ public class Program
                 }
 
                 // 4. CARGAR DATOS
-                // Path.Combine para que funcione en Linux (Docker / Azure)
-                context.Seedwork<Customer>(Path.Combine("Sources", "customers.json"));
-                context.Seedwork<Product>(Path.Combine("Sources", "products.json"));
-                context.Seedwork<Order>(Path.Combine("Sources", "orders.json"));
-                context.Seedwork<OrderItem>(Path.Combine("Sources", "orderitems.json"));
+                // En Testing la base arranca vacía; cada test siembra lo que necesita
+                if (!app.Environment.IsEnvironment("Testing"))
+                {
+                    context.Seedwork<Customer>(Path.Combine("Sources", "customers.json"));
+                    context.Seedwork<Product>(Path.Combine("Sources", "products.json"));
+                    context.Seedwork<Order>(Path.Combine("Sources", "orders.json"));
+                    context.Seedwork<OrderItem>(Path.Combine("Sources", "orderitems.json"));
+                }
             }
             catch (Exception ex)
             {
