@@ -1,4 +1,6 @@
-﻿using Dsw2025Tpi.Api;
+﻿using System.Net.Http.Headers;
+using Dsw2025Tpi.Api;
+using Dsw2025Tpi.Application.Services;
 using Dsw2025Tpi.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -41,6 +43,15 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
             services.AddDbContext<AuthenticateContext>(options => options.UseSqlite(_connection));
             services.AddDbContext<Dsw2025TpiContext>(options => options.UseSqlite(_connection));
         });
+    }
+
+    // Cliente HTTP con un JWT real firmado con la misma clave que valida la API
+    public HttpClient CreateClientWithRole(string role)
+    {
+        var client = CreateClient();
+        var token = Services.GetRequiredService<JwtTokenService>().GenerateToken($"test-{role.ToLower()}", role);
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        return client;
     }
 
     protected override void Dispose(bool disposing)

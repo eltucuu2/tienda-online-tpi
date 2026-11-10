@@ -2,6 +2,7 @@ using System.Net;
 using Dsw2025Tpi.Data;
 using Dsw2025Tpi.Domain.Entities;
 using FluentAssertions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Dsw2025Tpi.IntegrationTests;
@@ -28,6 +29,8 @@ public class SmokeTests
         // Confirma que el esquema se creó en SQLite (la consulta falla si la tabla no existe)
         using var scope = _factory.Services.CreateScope();
         var db = scope.ServiceProvider.GetRequiredService<Dsw2025TpiContext>();
-        db.Set<Product>().Count().Should().Be(0);
+        // No se valida la cantidad: la base es compartida y otros tests pueden haber insertado datos
+        var query = () => db.Set<Product>().AnyAsync();
+        await query.Should().NotThrowAsync();
     }
 }
