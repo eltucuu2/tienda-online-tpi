@@ -53,7 +53,6 @@ namespace Dsw2025Tpi.Application.Services
                                                   // Restar el stock aquí nuevamente genera inconsistencias severas en el inventario.
             {
                 var product = products[item.ProductId];
-                product.StockQuantity -= item.Quantity;
                 await _repository.Update(product);
             }
 
