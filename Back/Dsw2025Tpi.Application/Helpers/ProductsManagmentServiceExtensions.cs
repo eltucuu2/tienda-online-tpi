@@ -17,6 +17,7 @@ namespace Dsw2025Tpi.Application.Helpers
     {
         private readonly IRepository _repository;
         private readonly ILogger<ProductsManagmentServiceExtensions> _logger;
+
         public ProductsManagmentServiceExtensions(
             IRepository repository,
             ILogger<ProductsManagmentServiceExtensions> logger)
@@ -24,28 +25,22 @@ namespace Dsw2025Tpi.Application.Helpers
             _repository = repository;
             _logger = logger;
         }
-       public void ValidateProductRequest(ProductModel.Request request)
-{
-    // 1. NUEVO: Validamos los números primero
-    if (request.CurrentPrice <= 0)
-    {
-        throw new BadRequestException("El precio o el stock no son válidos.");
-    }
 
-    if (request.StockQuantity <= 0)
-    {
-        throw new ArgumentOutOfRangeException(nameof(request.StockQuantity), "El stock no debe ser menor o igual a 0");
-    }
+        public void ValidateProductRequest(ProductModel.Request request)
+        {
+            if (request.CurrentPrice <= 0 || request.StockQuantity < 0)
+            {
+                throw new BadRequestException("El precio o el stock no son válidos.");
+            }
 
-    // 2. Lo que ya tenías para validar strings
-    if (string.IsNullOrWhiteSpace(request.Sku) ||
-        string.IsNullOrWhiteSpace(request.Name)
-        || string.IsNullOrWhiteSpace(request.InternalCode))
-    {
-        _logger.LogWarning("Datos inválidos del producto: {@Request}", request);
-        throw new BadRequestException("Los datos del producto no son válidos.");
-    }
-}
+            if (string.IsNullOrWhiteSpace(request.Sku) ||
+                string.IsNullOrWhiteSpace(request.Name) || 
+                string.IsNullOrWhiteSpace(request.InternalCode))
+            {
+                _logger.LogWarning("Datos inválidos del producto: {@Request}", request);
+                throw new BadRequestException("Los datos del producto no son válidos.");
+            }
+        }
 
         public async Task<Product> GetProductOrThrow(Guid id)
         {
@@ -89,25 +84,25 @@ namespace Dsw2025Tpi.Application.Helpers
                 throw new NoContentException("No hay productos disponibles en la base de datos.");
             }
         }
+
         public async Task ValidateDuplicatedProductAsync(ProductModel.Request request)
         {
             var exist = await _repository.First<Product>(p => p.Sku == request.Sku);
             if (exist != null)
             {
                 _logger.LogWarning("Intento de duplicación de producto con SKU existente: {Sku}", request.Sku);
-                throw new BadRequestException($"Ya existe un producto con el Sku {request.Sku}");
+                throw new DuplicatedEntityException($"Ya existe un producto con el Sku {request.Sku}");
             }
-        }
+        }   
 
         public async Task ValidateDuplicatedProductUpdateAsync(ProductModel.Request request, Guid Id)
         {
-            var exist = await _repository.First<Product>(p =>
-            p.Sku == request.Sku && p.Id != Id);
+            var exist = await _repository.First<Product>(p => p.Sku == request.Sku && p.Id != Id);
 
             if (exist != null)
             {
                 _logger.LogWarning("Intento de duplicación de producto con SKU existente: {Sku}", request.Sku);
-                throw new BadRequestException($"Ya existe un producto con el Sku {request.Sku}");
+                throw new DuplicatedEntityException($"Ya existe un producto con el Sku {request.Sku}");
             }
         }
     }

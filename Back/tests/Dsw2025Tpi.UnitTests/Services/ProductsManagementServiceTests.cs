@@ -9,9 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Dsw2025Tpi.Domain.Interfaces;
 using Dsw2025Tpi.Domain.Entities;
-using Dsw2025Tpi.Application.Services; 
+using Dsw2025Tpi.Application.Services;
 using Dsw2025Tpi.Application.Dtos;
-using Dsw2025Tpi.Application.Exceptions; 
+using Dsw2025Tpi.Application.Exceptions;
 using Dsw2025Tpi.Application.Helpers;
 
 namespace Dsw2025Tpi.UnitTests.Services
@@ -20,8 +20,8 @@ namespace Dsw2025Tpi.UnitTests.Services
     {
         private readonly Mock<IRepository> _repositoryMock;
         private readonly Mock<ILogger<ProductsManagementService>> _loggerMock;
-        private readonly Mock<ILogger<ProductsManagmentServiceExtensions>> _extensionsLoggerMock; 
-        private readonly ProductsManagmentServiceExtensions _extensions; 
+        private readonly Mock<ILogger<ProductsManagmentServiceExtensions>> _extensionsLoggerMock;
+        private readonly ProductsManagmentServiceExtensions _extensions;
         private readonly ProductsManagementService _productService;
 
         public ProductsManagementServiceTests()
@@ -117,7 +117,7 @@ namespace Dsw2025Tpi.UnitTests.Services
             _repositoryMock.Setup(repo => repo.GetFiltered(It.IsAny<Expression<Func<Product, bool>>>(), It.IsAny<string[]>()))
                            .ReturnsAsync((Expression<Func<Product, bool>> expr, string[] includes) => 
                            {
-                               return allProducts.AsQueryable().Where(expr).ToList();
+                               return allProducts.AsQueryable().Where(expr.Compile()).ToList();
                            });
 
             var filter = new ProductModel.FilterProduct(Status: "enabled", Search: null, PageNumber: 1, PageSize: 10);
@@ -135,13 +135,14 @@ namespace Dsw2025Tpi.UnitTests.Services
             var products = new List<Product>();
             for (int i = 1; i <= 15; i++)
             {
-                products.Add(new Product($"SKU-{i}", $"INT-{i}", $"Producto {i}", "Desc", 100, 10) { IsActive = true });
+                // Uso de formato :D2 para que los nombres sean "Producto 01", "Producto 02", etc.
+                products.Add(new Product($"SKU-{i:D2}", $"INT-{i:D2}", $"Producto {i:D2}", "Desc", 100, 10) { IsActive = true });
             }
 
             _repositoryMock.Setup(repo => repo.GetFiltered(It.IsAny<Expression<Func<Product, bool>>>(), It.IsAny<string[]>()))
                            .ReturnsAsync((Expression<Func<Product, bool>> expr, string[] includes) => 
                            {
-                               return products.AsQueryable().Where(expr).ToList();
+                               return products.AsQueryable().Where(expr.Compile()).ToList();
                            });
 
             var filter = new ProductModel.FilterProduct(Status: null, Search: null, PageNumber: 2, PageSize: 5);
@@ -151,12 +152,11 @@ namespace Dsw2025Tpi.UnitTests.Services
             result.Should().NotBeNull();
             result!.TotalItems.Should().Be(15);
             result.ProductItems.Should().HaveCount(5);
-            result.ProductItems!.First().Sku.Should().Be("SKU-6");
+            result.ProductItems!.First().Sku.Should().Be("SKU-06");
             result.ProductItems!.Last().Sku.Should().Be("SKU-10");
         }
 
         [Fact]
-       [Fact]
         public async Task GetProducts_WithSearchTerm_FiltersByNameSkuOrInternalCode()
         {
             var p1 = new Product("SKU-ABC", "INT-001", "Mouse Gamer", "Desc", 50, 10) { IsActive = true };
