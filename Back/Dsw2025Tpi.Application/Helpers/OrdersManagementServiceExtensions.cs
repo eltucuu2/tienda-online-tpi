@@ -95,7 +95,7 @@ namespace Dsw2025Tpi.Application.Helpers
             return order;
         }
 
-        // --- MÉTODO OPTIMIZADO ---
+        
         public async Task ValidateStockAvailabilityAsync(OrderModel.Request request)
         {
             // 1. Obtenemos los IDs de los productos
@@ -106,7 +106,7 @@ namespace Dsw2025Tpi.Application.Helpers
 
             foreach (var item in request.OrderItems)
             {
-                // Buscamos en la lista en memoria (rápido) en lugar de ir a la BD (lento)
+            
                 var product = productsInDb.FirstOrDefault(p => p.Id == item.ProductId);
 
                 if (product == null)
