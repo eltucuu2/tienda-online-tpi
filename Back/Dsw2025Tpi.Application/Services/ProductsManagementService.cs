@@ -64,10 +64,13 @@ return new ProductModel.Response(product.Id, product.Sku, product.InternalCode, 
                 _ => null
             };
 
-            // 2. Predicado de búsqueda
-            System.Linq.Expressions.Expression<Func<Product, bool>> predicate = p =>
+           
+           System.Linq.Expressions.Expression<Func<Product, bool>> predicate = p =>
                 (isActiveFilter == null || p.IsActive == isActiveFilter) &&
-                (string.IsNullOrEmpty(filter.Search) || p.Name.Contains(filter.Search) || p.Sku.Contains(filter.Search));
+                (string.IsNullOrEmpty(filter.Search) || 
+                 p.Name.ToLower().Contains(filter.Search.ToLower()) || 
+                 p.Sku.ToLower().Contains(filter.Search.ToLower()) ||
+                 p.InternalCode.ToLower().Contains(filter.Search.ToLower())); // <- Se agregó InternalCode y ToLower()
 
             // 3. Obtener datos de la BD
             var filteredProducts = await _repository.GetFiltered<Product>(predicate);
