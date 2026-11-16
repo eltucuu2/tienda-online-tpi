@@ -64,7 +64,7 @@ namespace Dsw2025Tpi.UnitTests.Services
 
         [Fact]
         
-public async Task AddProduct_WithDuplicateSku_ThrowsBadRequestException()
+public async Task AddProduct_WithDuplicateSku_ThrowsBadRequestException() //mandar el cambio
 {
     var newProductDto = new ProductModel.Request(
         Sku: "SKU-DUPLICADO",
