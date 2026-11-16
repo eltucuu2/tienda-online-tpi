@@ -154,7 +154,7 @@ namespace Dsw2025Tpi.UnitTests.Services
             result.ProductItems!.First().Sku.Should().Be("SKU-6");
             result.ProductItems!.Last().Sku.Should().Be("SKU-10");
         }
-
+     [Fact]
         
        [Fact]
         public async Task GetProducts_WithSearchTerm_FiltersByNameSkuOrInternalCode()
