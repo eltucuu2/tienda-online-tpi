@@ -149,13 +149,13 @@ namespace Dsw2025Tpi.UnitTests.Services
             var result = await _productService.GetProducts(filter);
 
             result.Should().NotBeNull();
-            result!.TotalItems.Should().Be(15);
+            result!.TotalItems.Should().Be(20); // Caso de Falla cambio 20 por 15
             result.ProductItems.Should().HaveCount(5);
             result.ProductItems!.First().Sku.Should().Be("SKU-6");
             result.ProductItems!.Last().Sku.Should().Be("SKU-10");
         }
 
-        [Fact]
+        
        [Fact]
         public async Task GetProducts_WithSearchTerm_FiltersByNameSkuOrInternalCode()
         {

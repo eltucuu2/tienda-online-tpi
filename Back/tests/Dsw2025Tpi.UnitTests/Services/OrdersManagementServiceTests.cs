@@ -128,11 +128,11 @@ namespace Dsw2025Tpi.UnitTests.Services
             // Act
             Func<Task> act = async () => await _orderService.AddOrder(createOrderRequest);
 
-            // Assert - Tu código lanza BadRequestException por la falta de stock
+            // Assert 
             await act.Should().ThrowAsync<BadRequestException>()
                      .WithMessage("*no tiene stock suficiente*"); 
             
-            // Comprobamos que corta antes de guardar nada
+            
             _repositoryMock.Verify(repo => repo.Update(It.IsAny<Product>()), Times.Never);
             _repositoryMock.Verify(repo => repo.Add(It.IsAny<Order>()), Times.Never);
         }
@@ -156,7 +156,7 @@ namespace Dsw2025Tpi.UnitTests.Services
             // Act
             Func<Task> act = async () => await _orderService.AddOrder(createOrderRequest);
 
-            // Assert - Tu código lanza BadRequestException cuando no encuentra al cliente
+            // Assert -
             await act.Should().ThrowAsync<BadRequestException>()
                      .WithMessage("*No se encontró un cliente con el ID*");
             
