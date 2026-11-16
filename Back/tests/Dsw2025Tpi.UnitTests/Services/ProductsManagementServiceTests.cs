@@ -63,28 +63,37 @@ namespace Dsw2025Tpi.UnitTests.Services
         }
 
         [Fact]
-        public async Task AddProduct_WithDuplicateSku_ThrowsDuplicatedEntityException()
-        {
-            var newProductDto = new ProductModel.Request(
-                Sku: "SKU-DUPLICADO", 
-                InternalCode: "INT-000",
-                Name: "Mouse", 
-                Description: "Mouse óptico",
-                CurrentPrice: 50, 
-                StockQuantity: 5
-            );
-            
-            var existingProduct = new Product("SKU-DUPLICADO", "INT", "Viejo", "Desc", 100, 2);
-            
-            _repositoryMock.Setup(repo => repo.First(It.IsAny<Expression<Func<Product, bool>>>(), It.IsAny<string[]>()))
-                           .ReturnsAsync(existingProduct);
+        
+public async Task AddProduct_WithDuplicateSku_ThrowsBadRequestException()
+{
+    var newProductDto = new ProductModel.Request(
+        Sku: "SKU-DUPLICADO",
+        InternalCode: "INT-000",
+        Name: "Mouse",
+        Description: "Mouse óptico",
+        CurrentPrice: 50,
+        StockQuantity: 5
+    );
 
-            Func<Task> act = async () => await _productService.AddProduct(newProductDto);
+    var existingProduct = new Product(
+        "SKU-DUPLICADO", "INT", "Viejo", "Desc", 100, 2
+    );
 
-            await act.Should().ThrowAsync<DuplicatedEntityException>();
-            
-            _repositoryMock.Verify(repo => repo.Add(It.IsAny<Product>()), Times.Never);
-        }
+    _repositoryMock.Setup(repo => repo.First(
+        It.IsAny<Expression<Func<Product, bool>>>(),
+        It.IsAny<string[]>()
+    )).ReturnsAsync(existingProduct);
+
+    Func<Task> act = async () =>
+        await _productService.AddProduct(newProductDto);
+
+    await act.Should().ThrowAsync<BadRequestException>();
+
+    _repositoryMock.Verify(
+        repo => repo.Add(It.IsAny<Product>()),
+        Times.Never
+    );
+}
 
         [Fact]
         public async Task AddProduct_WithInvalidStockOrPrice_ThrowsBadRequestException()
@@ -154,8 +163,7 @@ namespace Dsw2025Tpi.UnitTests.Services
             result.ProductItems!.First().Sku.Should().Be("SKU-6");
             result.ProductItems!.Last().Sku.Should().Be("SKU-10");
         }
-     [Fact]
-        
+     
        [Fact]
         public async Task GetProducts_WithSearchTerm_FiltersByNameSkuOrInternalCode()
         {
