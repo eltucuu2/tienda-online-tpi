@@ -1,6 +1,6 @@
 name: CI/CD - Dsw2025Tpi API
 
-# Disparadores: push (incluye el merge de un PR) y Pull Requests hacia las ramas principales
+
 on:
   push:
     branches: [development, main]
@@ -17,8 +17,32 @@ env:
   WEBAPP_HOST: dsw2026-api-gqd9fhc3f9fde8bf.centralus-01.azurewebsites.net
 
 jobs:
+  
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener el código
+        uses: actions/checkout@v4
+
+      - name: Configurar .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restaurar dependencias para testing
+        run: dotnet restore ${{ env.SOLUTION_PATH }}
+
+      - name: Compilar solución para testing
+        run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Release --no-restore
+
+      - name: Ejecutar pruebas automatizadas (dotnet test)
+        run: dotnet test ${{ env.SOLUTION_PATH }} --configuration Release --no-build --verbosity normal
+
+ 
   build:
     name: build
+    needs: test  
     runs-on: ubuntu-latest
 
     steps:
@@ -56,10 +80,11 @@ jobs:
           path: ./publish
           retention-days: 7
 
+  
   deploy:
     name: deploy
     needs: build
-    # Solo se despliega desde main (push/merge o ejecución manual), nunca desde un Pull Request
+    
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
@@ -80,9 +105,8 @@ jobs:
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ./publish
 
-      # Prueba de humo: la app puede tardar en arrancar (plan F1 y base serverless pausada)
+      
       - name: Verificar la API desplegada (smoke test)
-        # shell: bash activa pipefail, así un error de curl no queda oculto por el pipe a head
         shell: bash
         run: |
           curl --fail --silent --show-error --retry 10 --retry-delay 15 --retry-all-errors --max-time 60 \
