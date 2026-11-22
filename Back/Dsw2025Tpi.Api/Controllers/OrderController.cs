@@ -58,7 +58,7 @@ public async Task<IActionResult> GetOrders(
         {
             order.Id,
             order.CustomerId,
-             order.CustomerName,   // <--- LO QUE TE FALTABA
+            order.CustomerName,   // <--- LO QUE TE FALTABA
             order.Date,
             order.Status,
             order.TotalAmount
@@ -76,6 +76,11 @@ public async Task<IActionResult> GetOrders(
         {
             // Busca la orden por su identificador
             var order = await _service.GetOrderById(id);
+        
+            if (order == null)
+            {
+                return NotFound();
+            }
 
             // Devuelve los datos de la orden, incluyendo los ítems y el total
             var result = new

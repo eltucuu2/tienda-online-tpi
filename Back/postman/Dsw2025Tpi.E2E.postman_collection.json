@@ -1,0 +1,308 @@
+{
+  "info": {
+    "_postman_id": "e89760c3-ae71-4c90-b0be-fbae30b6947f",
+    "name": "Dsw2025Tpi - E2E Flujo de ordenes",
+    "description": "Flujo E2E de caja negra: registrar cliente, login, listar productos y crear una orden. Usar con el environment 'Dsw2025Tpi - Local' y la API levantada en http://localhost:3000.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "0 - Registrar cliente (paso previo)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "// Crea un usuario NUEVO y distinto en cada ejecucion (asi la coleccion se puede repetir sin errores).",
+              "const sello = Date.now();                              // numero unico, por ejemplo 1763337600000",
+              "const usuario = \"e2e_\" + sello;",
+              "pm.environment.set(\"username\", usuario);",
+              "pm.environment.set(\"password\", \"E2e#\" + sello);       // cumple la regla: mayuscula, minuscula, numero, simbolo y 8+ caracteres",
+              "pm.environment.set(\"email\", usuario + \"@example.com\");",
+              "pm.environment.set(\"phoneNumber\", String(sello).slice(-10));  // el telefono admite hasta 15 caracteres"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Registro: responde 200 OK\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "auth": {
+          "type": "noauth"
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\",\n  \"email\": \"{{email}}\",\n  \"phoneNumber\": \"{{phoneNumber}}\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/registerCustomer",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "registerCustomer"
+          ]
+        },
+        "description": "Crea un cliente de prueba nuevo. Hace falta porque la base de datos no trae usuarios para iniciar sesion."
+      }
+    },
+    {
+      "name": "1 - Login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Login: responde 200 OK\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "let datos = {};",
+              "try { datos = pm.response.json(); } catch (e) { console.log(\"La respuesta del login no es JSON:\", pm.response.text()); }",
+              "",
+              "pm.test(\"Login: la respuesta trae token, userId y role\", function () {",
+              "    pm.expect(datos).to.have.property(\"token\");",
+              "    pm.expect(datos).to.have.property(\"userId\");",
+              "    pm.expect(datos).to.have.property(\"role\");",
+              "});",
+              "",
+              "pm.test(\"Login: el token tiene formato JWT (3 partes separadas por punto)\", function () {",
+              "    pm.expect(String(datos.token).split(\".\")).to.have.lengthOf(3);",
+              "});",
+              "",
+              "pm.test(\"Login: el rol es Customer\", function () {",
+              "    pm.expect(datos.role).to.eql(\"Customer\");",
+              "});",
+              "",
+              "// Guardar para las solicitudes siguientes (sin copiar y pegar nada a mano)",
+              "if (datos.token) {",
+              "    pm.environment.set(\"token\", datos.token);",
+              "    pm.environment.set(\"userId\", datos.userId);",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "auth": {
+          "type": "noauth"
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/auth/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        },
+        "description": "Inicia sesion y guarda token y userId en el environment."
+      }
+    },
+    {
+      "name": "2 - Listar productos",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Productos: responde 200 OK\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "let productos = [];",
+              "try { productos = pm.response.json(); } catch (e) { console.log(\"La respuesta de productos no es JSON:\", pm.response.text()); }",
+              "",
+              "pm.test(\"Productos: la respuesta es una lista con al menos un producto\", function () {",
+              "    pm.expect(productos).to.be.an(\"array\");",
+              "    pm.expect(productos.length).to.be.above(0);",
+              "});",
+              "",
+              "// Elegir el primer producto activo con stock de sobra para la cantidad que vamos a pedir",
+              "const cantidad = Number(pm.environment.get(\"quantity\") || 1);",
+              "const elegido = Array.isArray(productos)",
+              "    ? productos.find(function (p) { return p.isActive === true && p.stockQuantity > cantidad + 1; })",
+              "    : undefined;",
+              "",
+              "pm.test(\"Productos: hay un producto activo con stock suficiente\", function () {",
+              "    pm.expect(elegido, \"No hay ningun producto activo con stock suficiente\").to.not.equal(undefined);",
+              "});",
+              "",
+              "if (elegido) {",
+              "    pm.test(\"Productos: el producto elegido tiene id, name y currentPrice\", function () {",
+              "        pm.expect(elegido).to.have.property(\"id\");",
+              "        pm.expect(elegido).to.have.property(\"name\");",
+              "        pm.expect(elegido.currentPrice).to.be.above(0);",
+              "    });",
+              "    pm.environment.set(\"productId\", elegido.id);",
+              "    pm.environment.set(\"productName\", elegido.name);",
+              "    pm.environment.set(\"productPrice\", String(elegido.currentPrice));",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/products",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "products"
+          ]
+        },
+        "description": "Lista los productos activos y guarda el id del primero con stock suficiente en productId."
+      }
+    },
+    {
+      "name": "3 - Crear orden",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Orden: responde 201 Created\", function () {",
+              "    pm.response.to.have.status(201);",
+              "});",
+              "",
+              "let orden = {};",
+              "try { orden = pm.response.json(); } catch (e) { console.log(\"La respuesta de la orden no es JSON:\", pm.response.text()); }",
+              "",
+              "pm.test(\"Orden: trae id y estado PENDING\", function () {",
+              "    pm.expect(orden).to.have.property(\"id\");",
+              "    pm.expect(orden.status).to.eql(\"PENDING\");",
+              "});",
+              "",
+              "pm.test(\"Orden: pertenece al cliente que inicio sesion\", function () {",
+              "    pm.expect(String(orden.customerId).toLowerCase()).to.eql(String(pm.environment.get(\"userId\")).toLowerCase());",
+              "});",
+              "",
+              "pm.test(\"Orden: incluye el producto elegido con la cantidad pedida\", function () {",
+              "    pm.expect(orden.orderItems).to.be.an(\"array\");",
+              "    pm.expect(orden.orderItems.length).to.eql(1);",
+              "    pm.expect(String(orden.orderItems[0].productId).toLowerCase()).to.eql(String(pm.environment.get(\"productId\")).toLowerCase());",
+              "    pm.expect(orden.orderItems[0].quantity).to.eql(Number(pm.environment.get(\"quantity\")));",
+              "});",
+              "",
+              "pm.test(\"Orden: el total es precio por cantidad\", function () {",
+              "    const esperado = Number(pm.environment.get(\"productPrice\")) * Number(pm.environment.get(\"quantity\"));",
+              "    pm.expect(Number(orden.totalAmount)).to.be.closeTo(esperado, 0.01);",
+              "});",
+              "",
+              "if (orden.id) {",
+              "    pm.environment.set(\"orderId\", orden.id);",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"customerId\": \"{{userId}}\",\n  \"shippingAddress\": \"{{shippingAddress}}\",\n  \"billingAddress\": \"{{billingAddress}}\",\n  \"orderItems\": [\n    {\n      \"productId\": \"{{productId}}\",\n      \"quantity\": {{quantity}}\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/orders",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "orders"
+          ]
+        },
+        "description": "Crea una orden con el producto elegido. Requiere token de un usuario con rol Customer."
+      }
+    }
+  ]
+}
